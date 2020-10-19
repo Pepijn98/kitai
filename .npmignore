@@ -1,0 +1,13 @@
+docs/
+examples/
+.vscode/
+.github/
+.prettierignore
+.prettierrc
+.editorconfig
+.eslintignore
+.eslintrc
+.codeclimate.yml
+.nojekyll
+tsconfig.json
+typedoc.js
