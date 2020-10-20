@@ -1,6 +1,6 @@
 {
     "name": "@pepijn98/kitai",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Validate condition, specifically to check if a function argument is what you expected it to be",
     "license": "MIT",
     "main": "lib/index.js",
