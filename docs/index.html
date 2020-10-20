@@ -60,10 +60,51 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#kitai" id="kitai" style="color: inherit; text-decoration: none;">
-					<h1>kitai</h1>
+				<p><a href="https://discord.gg/p895czC"><img src="https://discordapp.com/api/guilds/240059867744698368/embed.png" alt="Discord"></a>
+					<a href="https://www.npmjs.com/package/@pepijn98/kitai"><img src="https://img.shields.io/npm/v/@pepijn98/kitai.svg?maxAge=3600" alt="Version"></a>
+					<a href="https://www.npmjs.com/package/@pepijn98/kitai"><img src="https://img.shields.io/npm/dt/@pepijn98/kitai.svg?maxAge=3600" alt="Downloads"></a>
+					<a href="https://david-dm.org/Pepijn98/kitai"><img src="https://img.shields.io/david/Pepijn98/kitai.svg?maxAge=3600" alt="Dependencies"></a>
+					<a href="https://david-dm.org/Pepijn98/kitai"><img src="https://img.shields.io/david/dev/Pepijn98/kitai.svg?maxAge=3600" alt="Dev Dependencies"></a>
+				<a href="https://codeclimate.com/github/Pepijn98/kitai/maintainability"><img src="https://api.codeclimate.com/v1/badges/843becfdf91e15da5b0c/maintainability" alt="Maintainability"></a></p>
+				<a href="#kitai-期待" id="kitai-期待" style="color: inherit; text-decoration: none;">
+					<h1>kitai (期待)</h1>
 				</a>
-				<p>Validate condition, specifically to check if a function argument is what you expected it to be</p>
+				<p>This is a copy of kotlin&#39;s require function.
+					<br>
+				It validates the condition you give it and if it&#39;s false will throw an IllegalArgumentException.</p>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h1>Installation</h1>
+				</a>
+				<ul>
+					<li>npm i -S @pepijn98/kitai</li>
+					<li>yarn add @pepijn98/kitai</li>
+				</ul>
+				<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+					<h1>Examples</h1>
+				</a>
+				<p>See <a href="./examples">examples</a> for more</p>
+				<pre><code class="language-ts"><span class="hljs-comment">// You can name this anything you want, I like &quot;expect&quot; since it fits the package name.</span>
+<span class="hljs-comment">// You can even name it require just like kotlin (only if you don&#x27;t use node&#x27;s require function)</span>
+<span class="hljs-keyword">import</span> expect <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@pepijn98/kitai&quot;</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params">arg: <span class="hljs-built_in">number</span></span>): <span class="hljs-title">void</span> </span>{
+    expect(arg &gt;= <span class="hljs-number">0</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-string">`&quot;arg&quot; cannot be a negative number, was <span class="hljs-subst">${arg}</span>`</span>);
+
+    <span class="hljs-comment">// We now know that arg will not be a negative number</span>
+    <span class="hljs-comment">// Do your extremly complex 9000 IQ mathematical equation here</span>
+}
+
+test(-<span class="hljs-number">5</span>); <span class="hljs-comment">// Will throw an IllegalArgumentException</span>
+test(<span class="hljs-number">15</span>); <span class="hljs-comment">// Won&#x27;t throw, yaay</span></code></pre>
+				<a href="#name" id="name" style="color: inherit; text-decoration: none;">
+					<h1>Name</h1>
+				</a>
+				<p>Since it&#39;s a Japanese name I guess I should explain this, even though I don&#39;t speak Japanese and use translators.
+					<br>
+					Kitai written as 期待 in kanji, roughly means &quot;Expectations&quot; or &quot;Expectation&quot;
+					<br>
+					<br>
+				<em>(directly taken from google translate and deepl, please excuse my ignorance if it&#39;s completly wrong)</em></p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
