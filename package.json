@@ -1,6 +1,6 @@
 {
     "name": "@pepijn98/kitai",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Validate condition, specifically to check if a function argument is what you expected it to be",
     "license": "MIT",
     "main": "lib/index.js",
@@ -11,7 +11,7 @@
     "keywords": [
         "test",
         "expect",
-        "assetion",
+        "assertion",
         "typescript"
     ],
     "homepage": "https://pepijn98.github.io/kitai/",

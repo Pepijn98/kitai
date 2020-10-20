@@ -11,11 +11,9 @@ class IllegalArgumentException extends Error {
  * @param condition
  * @param lazyMessage
  */
-function expect(condition: boolean, lazyMessage: () => any): void {
+export = function (condition: boolean, lazyMessage: () => string): void {
     if (!condition) {
         const message = lazyMessage();
-        throw new IllegalArgumentException(message.toString());
+        throw new IllegalArgumentException(message);
     }
 };
-
-export = expect;
